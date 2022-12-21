@@ -49,7 +49,7 @@ public class apiTest {
                         .statusCode(200)
                         .contentType(ContentType.JSON)
                         .assertThat()
-                        .body("name", equalTo("DenemeOguzhan2"))
+                        .body("name", equalTo("TrelloList"))
                         .extract().path("id");
 
         String[] cardsIdArr = new String[2];
@@ -87,7 +87,7 @@ public class apiTest {
                 .statusCode(200)
                 .contentType(ContentType.JSON).
                 assertThat()
-                .body("desc", equalTo("trello edited Test Description"))
+                .body("desc", equalTo("edited Test Description"))
                 .extract().path("id");
 
         //Delete all of the cards
